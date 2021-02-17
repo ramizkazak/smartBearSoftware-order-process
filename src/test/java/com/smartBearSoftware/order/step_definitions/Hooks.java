@@ -9,12 +9,12 @@ import io.cucumber.java.Before;
 public class Hooks {
 
     @Before
-    public void setUpScenario(){
-       Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+    public void setUpScenario() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
     @After
-    public void tearDownScenario(){
+    public void tearDownScenario() {
         BrowserUtils.sleep(2);
         Driver.closeDriver();
     }

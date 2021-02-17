@@ -21,7 +21,6 @@ public class WebOrderPage {
     public WebElement product;
 
 
-
     @FindBy(id = "ctl00_MainContent_fmwOrder_txtQuantity")
     public WebElement quantity;
 
@@ -59,12 +58,11 @@ public class WebOrderPage {
 
 
     @FindBy(xpath = "//table[@class='SampleTable']//td[2]")
-     public List<WebElement> customerList;
+    public List<WebElement> customerList;
 
 
-   // @FindBy(xpath = "//tbody/tr[2]/td[2]")
+    // @FindBy(xpath = "//tbody/tr[2]/td[2]")
     //public WebElement customer;
-
 
 
 }

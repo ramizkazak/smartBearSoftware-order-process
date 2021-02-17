@@ -9,17 +9,18 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
-    private Driver(){}
+    private Driver() {
+    }
 
     private static WebDriver driver;
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
-        if (driver == null){
+        if (driver == null) {
 
             String browser = ConfigurationReader.getProperty("browser");
 
-            switch (browser){
+            switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
@@ -36,8 +37,8 @@ public class Driver {
 
     }
 
-    public static void closeDriver(){
-        if (driver != null){
+    public static void closeDriver() {
+        if (driver != null) {
             driver.quit();
             driver = null;
         }

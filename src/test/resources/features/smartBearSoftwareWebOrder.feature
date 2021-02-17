@@ -4,7 +4,8 @@ Feature: SmartBearSoftware webOrder feature
     #Given tester is on login page
     When tester login using "Tester" and "test" and click login button
     Then tester should "Web Orders" page
-@wip
+
+  @wip
   Scenario Outline:
     Given tester login using "Tester" and "test" and click login button
     When tester click order button

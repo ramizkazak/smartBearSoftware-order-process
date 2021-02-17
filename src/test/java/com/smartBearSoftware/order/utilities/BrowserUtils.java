@@ -13,8 +13,8 @@ public class BrowserUtils {
         }
     }
 
-    public static void wait(int time){
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),time);
+    public static void wait(int time) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), time);
 
     }
 

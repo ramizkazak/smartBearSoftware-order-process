@@ -100,7 +100,7 @@ public class SmartBearOrderProcess_StepDefinitions {
         webOrderPage.viewAll.click();
         List<String> actualCostumerList = new ArrayList<>();
         for (WebElement eachCostumer : webOrderPage.customerList)
-           actualCostumerList.add(eachCostumer.getText());
+            actualCostumerList.add(eachCostumer.getText());
 
         Assert.assertTrue(actualCostumerList.contains(expectedCostumer));
     }
