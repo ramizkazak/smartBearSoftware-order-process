@@ -6,6 +6,7 @@ import com.smartBearSoftware.order.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -43,7 +44,7 @@ public class SmartBearOrderProcess_StepDefinitions {
 
     @When("tester enters {string} to quantity")
     public void tester_enters_to_quantity(String quantity) {
-        webOrderPage.quantity.sendKeys(quantity);
+        webOrderPage.quantity.sendKeys(Keys.BACK_SPACE+quantity);
     }
 
     @When("tester enters {string} to costumer name")
